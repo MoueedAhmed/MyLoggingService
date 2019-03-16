@@ -9,6 +9,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <service
+            android:name=".MessengerLoggingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.myloggingservice.logService" />
+            </intent-filter>
+        </service>
 
     </application>
 </manifest>
